@@ -1,10 +1,10 @@
-import item.Item;
+import menu.Menu;
 
 public class Customer {
     Customer(){}
 
-    public void BuyItem(Item item) {
-        String itemData = item.getData(); // [?] 적절하게 캡슐화되었나?
+    public void buyItem(Menu menu){
+        menu.showItem();
     }
 }
 
