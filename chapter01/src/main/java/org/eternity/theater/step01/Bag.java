@@ -5,10 +5,12 @@ public class Bag {
     private Invitation invitation;
     private Ticket ticket;
 
+    // 초대장 없는 Bag
     public Bag(long amount) {
         this(null, amount);
     }
 
+    // 초대장 있는 Bag -> 오버라이드
     public Bag(Invitation invitation, long amount) {
         this.invitation = invitation;
         this.amount = amount;

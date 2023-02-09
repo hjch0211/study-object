@@ -7,6 +7,7 @@ public class Theater {
         this.ticketSeller = ticketSeller;
     }
 
+    // 말로 풀었을 때 이상
     public void enter(Audience audience) {
         if (audience.getBag().hasInvitation()) {
             Ticket ticket = ticketSeller.getTicketOffice().getTicket();
