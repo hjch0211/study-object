@@ -9,20 +9,4 @@ public class IceCream extends Item {
         this.name = name;
         this.price = price;
     }
-
-    @Override
-    public String getType() {
-        return this.type;
-    }
-    
-    @Override
-    public String getName() {
-        return this.name;
-    }
-    
-    @Override
-    public String getPrice() {
-        return this.price;
-    }
-    
 }
