@@ -1,9 +1,7 @@
 package customer.balance;
+import customer.balance.Balance;
 
-public class CardBalance {
-    public CardBalance() {}
-
-    public void payFor(String toBuy) {
-        
-    }
+public class CardBalance extends Balance {
+    @Override
+    private String type = "card";
 }

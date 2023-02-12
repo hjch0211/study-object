@@ -7,10 +7,10 @@ public class Customer {
     private String howToPay;
     private Balance balance;
 
-    public Customer(String howToPay) {
+    public Customer(String howToPay, Number quantity) {
         this.howToPay = howToPay;
-        if(howToPay === 'card') this.balance = new CardBalance();
-        else if(howToPay === 'cash') this.balance = new CashBalance();
+        if(howToPay === 'card') this.balance = new CardBalance(quantity);
+        else if(howToPay === 'cash') this.balance = new CashBalance(quantity);
     }
 
     public void buyItem(Menu menu, String toBuy) {

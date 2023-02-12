@@ -1,9 +1,12 @@
 package customer.balance;
 
 public abstract class Balance {
-    public Balance() {}
+    private String type;
+    private Number quantity;
 
-    public void payFor() {
-        
+    public Balance(Number quantity) {
+        this.quantity = quantity;
     }
+
+    public void payFor(String toBuy);
 }
