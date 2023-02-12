@@ -1,14 +1,22 @@
 package customer;
 
+import customer.balance.*;
 import menu.Menu;
-import customer.cardbalance.CardBalance;
 
 public class Customer {
-    public Customer() {}
+    private String howToPay;
+    private Balance balance;
+
+    public Customer(String howToPay) {
+        this.howToPay = howToPay;
+        if(howToPay === 'card') this.balance = new CardBalance();
+        else if(howToPay === 'cash') this.balance = new CashBalance();
+    }
 
     public void buyItem(Menu menu, String toBuy) {
-        menu.showItem(toBuy);
-        // [...] 커스토머를 이렇게 사용하면 안되려나... 
-        menu.buyItem(toBuy, new CardBalance());
+        // menu.showItem(toBuy);
+        balance.payFor(toBuy);
     }
+
+    
 }

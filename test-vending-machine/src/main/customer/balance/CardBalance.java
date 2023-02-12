@@ -1,4 +1,4 @@
-package customer.cardbalance;
+package customer.balance;
 
 public class CardBalance {
     public CardBalance() {}
