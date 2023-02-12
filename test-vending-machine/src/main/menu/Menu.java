@@ -12,10 +12,12 @@ public class Menu {
     public Menu() {}
 
     public void showItem(String toBuy) {
-        // toBuy가 있으면 ㄱ
-
-
-        // 없으면 print error
+        for (Item item : items) if(item.getName() == toBuy) {
+            System.out.println("name : " + this.name);
+            System.out.println("type : " + this.type);
+            System.out.println("price : " + this.price);
+            System.out.println("stock : " + this.stock);
+        }
     }
 
     // [Todo] 디버깅해야 됨
