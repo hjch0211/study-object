@@ -1,9 +1,10 @@
 package customer;
+import menu.Menu;
 
 public class Customer {
     private Menu menu;
 
-    Customer(Menu menu) {
+    public Customer(Menu menu) {
         this.menu = menu;
     }
 
