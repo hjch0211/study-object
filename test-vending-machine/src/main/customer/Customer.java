@@ -1,6 +1,7 @@
 package customer;
 
 import customer.balance.*;
+import customer.balance.*;
 import menu.Menu;
 
 public class Customer {
@@ -15,7 +16,7 @@ public class Customer {
 
     public void buyItem(Menu menu, String toBuy) {
         // menu.showItem(toBuy);
-        balance.payFor(toBuy);
+        balance.payFor(toBuy); // BuyableCondition
     }
 
     
