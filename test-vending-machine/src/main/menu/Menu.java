@@ -28,7 +28,7 @@ public class Menu {
         return list.toArray(new Item[0]);
     }
 
-    public void buyItem(String toBuy) {
-        
+    public void buyItem(String toBuy, CardBalance cardBalance) {
+        cardBalance.payFor(toBuy);
     }
 }

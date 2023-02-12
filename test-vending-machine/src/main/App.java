@@ -10,7 +10,7 @@ public class App {
         menu.registerItem(new Soju('참이슬', 1800, 1));
 
         String toBuy = "구구콘";
-        Customer customer = new Customer(new Menu); // [Todo] 팩토리로 빼기
-        customer.buyItem(toBuy);
+        Customer customer = new Customer(); // [Todo] 팩토리로 빼기
+        customer.buyItem(menu, toBuy);
     }
 }
