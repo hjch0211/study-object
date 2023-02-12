@@ -5,6 +5,12 @@ public abstract class Item {
     private String name;
     private Number price;
     private Number stock;
+
+    public Item(String name, Number price, Number stock) {
+        this.name = name;
+        this.price = price;
+        this.stock = stock;
+    }
     
     public String getType() {
         return this.type;
